@@ -31,12 +31,15 @@ class Quiz {
   play(){
     //write code here to hide question elements
       question.hide();
+
     //write code to change the background color here
       background("lightBlue");
+
     //write code to show a heading for showing the result of Quiz
       textSize(30);
       text("Result of the Quiz",340, 50);
       text(".................................",320,60);
+
     //call getContestantInfo( ) here
       Contestant.getPlayerInfo();
     //write condition to check if contestantInfor is not undefined
@@ -53,11 +56,12 @@ class Quiz {
           fill("Green")} 
           else{
           fill("red");
-         }}
+         }
          
     //write code to highlight contest who answered correctly
     display_Answers+=30;
     textSize(20);
-    text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
+    text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers);
   }
+}
 }
